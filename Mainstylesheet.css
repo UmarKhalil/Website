@@ -382,6 +382,8 @@ div.desc {
 
 
 
+<<<<<<< HEAD
+=======
 .footer {
 	bottom:0;
 	left: 0;
@@ -408,30 +410,8 @@ position: absolute;
 	border-radius: 5px;
 	outline: none;
 	color: #9DBFAF;
+>>>>>>> be237dc9eaaa61dad06b6d7841a61eb2ea87fc6b
 
-		
-}
-
-.searchTerm:focus{
-	color: #00B4CC;
-}
-
-.searchButton {
-position: absolute;
-right: -50px;	
-width: 40px;
-height: 36px;
-border: 1px solid  #00BFCC;
-background: none;
-text-align: center;
-color: #fff;
-border-radius: 5px;
-cursor: pointer;	
-font-size: 20px;
-margin-bottom:50px;
-margin-left:100px;
-
-}
 
 #button {
 	height: 30px;
@@ -440,13 +420,7 @@ margin-left:100px;
 
 
 
-.wrap{
-width: 15%;
-position: absolute;
-top: 50;
-left: 50%;
-transform: translate(-50%, -50%); 
-}	
+
 
 
 
