@@ -150,8 +150,10 @@ div#side-nav div {
 	transform: translateX(-50px);
 }
 
-#side-nav div .dep-name p {
+#side-nav div .dep-name a {
 	font-size: 16px;
+	text-decoration: none;
+	color: black;
 }
 
 div#side-nav div:hover {
