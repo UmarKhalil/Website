@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+<head>
+	<link rel="stylesheet" type="text/css" href="Mainstylesheet.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="laptopimg2.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="laptopimg3.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="laptopimg4.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+
+<div class="wrap">
+
+<div class ="search">
+<p>Get offers in your inbox</p>
+<div id="text">
+</div>
+
+<input type ="text" class="searchTerm" placeholder="What are you looking for?">
+<button type ="submit" class="searchButton">
+
+
+
+<img id="button" src="search.png">
+
+<i class="fa fa search"></li>
+</button>
+
+
+<div id="inbox">
+
+<img id="inboxnew" src="inboxtick.png">
+
+</div>
+
+
+<div id="socialmedia1">
+
+<img id="facebook" src="fbicon.png">
+
+</div>
+
+
+<div id="socialmedia2">
+
+<img id="twitter" src="twitterlogo.png">
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+
+</html>
+
+
