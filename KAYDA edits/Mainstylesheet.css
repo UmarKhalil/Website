@@ -340,21 +340,7 @@ animation-duration: 1.5s;
 /* end of carousel styling */
 
 
-/*styling for the shop-by headings */
-div.shop-by-categ {
-	width: 95%;
-	height: 60px;
-	border-top: 4px solid red;
-}
 
-h3.shop-by {
-	color: red;
-	padding-right: 140px;
-	border-bottom: 3px solid red;
-	padding-bottom: 15px;
-}
-
-/* end of stying for shop-by headings */
 
 
 /* styling for the product sales/
@@ -409,14 +395,44 @@ div.desc:hover {
 
 
 
+
+/*styling for the shop-by headings */
+.shop-container div.shop-by-categ {
+	width: 95%;
+	height: 60px;
+}
+
+h3.shop-by {
+	color: red;
+	padding-right: 140px;
+	border-bottom: 3px solid red;
+	padding-bottom: 5px;
+}
+
+/* end of stying for shop-by headings */
+
+
+
+
+
 /* styling for the men's clothing item categs */
-div.shop-section {
+div.shop-container {
 	margin-top: 20px;
 	margin-left: 180px;
+	margin-bottom: 80px;
+}
+
+div#brand {
+	margin-top: 50px;
+}
+
+.f-ingthing {
+	margin-top: 50px;
 }
 
 div.item {
     margin: 35px 40px;
+	background-color: white;
     border: 1px solid #ccc;
     float: left;
     width: 260px;
@@ -436,7 +452,7 @@ div.desc a {
 div.desc:hover a {
 	color: red;
 }
-/* end of styling for the en's clothing categs */
+/* end of styling for the men's clothing categs */
 
 
 
