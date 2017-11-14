@@ -422,7 +422,7 @@ div.shop-container {
 	margin-bottom: 80px;
 }
 
-div#brand {
+div#brand, #mensale {
 	margin-top: 50px;
 }
 
@@ -453,16 +453,14 @@ div.desc:hover a {
 	color: red;
 }
 
-#mensale {
-	
-}
-
 .sitem {
 	width: 350px;
 	height: 220px;
-	margin-left: 150px;
+	margin-left: 100px;
 	margin-right: 150px;
 }
+
+
 /* end of styling for the men's clothing categs */
 
 
