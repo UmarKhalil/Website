@@ -1,0 +1,10 @@
+#active {
+	border: 3px solid purple;
+}
+
+h3.shop-by {
+	color: purple;
+	padding-right: 140px;
+	border-bottom: 3px solid purple;
+	padding-bottom: 5px;
+} 
