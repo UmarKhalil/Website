@@ -352,17 +352,12 @@ div.row {
 div.gallery {
     margin: 5px;
 	margin-left: 120px;
-    border: 1px solid #ccc;
     float: left;
     width: 350px;
 }
 
 div.gallery:first-child {
 	margin-left: 230px;
-}
-
-div.gallery:hover, div.item:hover {
-    border: 1px solid #777;
 }
 
 div.gallery img, div.item img {
@@ -430,10 +425,9 @@ div#brand, #mensale {
 	margin-top: 50px;
 }
 
-div.item, .sitem {
-    margin: 35px 40px;
+div.item, .sitem, .rec {
+    margin: 45px 40px;
 	background-color: white;
-    border: 1px solid #ccc;
     float: left;
     width: 260px;
 }
@@ -454,13 +448,17 @@ div.desc:hover a {
 }
 
 .sitem {
-	width: 350px;
-	height: 220px;
+	width: 450px;
+	height: 370px;
 	margin-left: 100px;
 	margin-right: 150px;
 }
 
-
+.rec {
+	width: 860;
+	height: 380;
+	margin-left: 250px;
+}
 /* end of styling for the men's clothing categs */
 
 
@@ -469,8 +467,14 @@ div.desc:hover a {
 
 
 
-
-
+/* styling for the footer */
+.footer {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: gray;
+	height: 250px;
+}
 
 
 
