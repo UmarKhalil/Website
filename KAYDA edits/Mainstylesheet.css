@@ -464,11 +464,14 @@ div.desc:hover a {
 }
 /* end of styling for the men's clothing categs */
 
-#empty {
-	height: 250px;
+#empty, #empty1 {
+	height: 10px;
+	clear: both;
 }
 
-
+#empty1 {
+	height: 90px;
+}
 
 
 
