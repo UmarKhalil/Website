@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="Mainstylesheet.css">
+		
+	</head>
+	
+	<body>
+	<div id="wrapper">
+	
+	
+	<div id="header">
+		<!-- header with logo, search bar, and cart -->
+		<div id="top-head">
+			<!-- logo -->
+			<div class="logo">
+				<a href="Mainpage.html"><img id="generic" src="GENERIC.png"></a>
+			</div>
+			
+			<!-- search bar -->
+			<div class="search-bar">
+			
+				<div class="dropdwn">
+					<button onclick="drop()" id="categ" class="buttoncat">
+						Categories <i class="darrow"></i>
+					</button>
+					<div id="dropcat" class="drop-content">
+						<a href="#">Men's Clothing</a>
+						<a href="womens.html">Women's Clothing</a>
+						<a href="#">Phones</a>
+						<a href="#">Computers</a>
+						<a href="#">Jewellery</a>
+						<a href="#">Home and Furniture</a>
+						<a href="#">Accessories</a>
+						<a href="#">Baby</a>
+						<a href="#">Sports</a>
+						<a href="#">Automobile Accessories</a>
+					</div>
+					
+					<!-- script for when the user clicks on the category button
+						to show or hide the dropdown content in #dropcat-->
+					<script>
+						function drop() {
+							document.getElementById("dropcat").classList.toggle("show");
+						}
+						
+						window.onclick = function(event) {
+							if (!event.target.matches('.buttoncat')) {
+							
+								var dropdowns = document.getElementsByClassName("drop-content");
+								var i;
+								for (i = 0; i < dropdowns.length; i++) {
+									var openDropdown = dropdowns[i];
+									if (openDropdown.classList.contains('show')) {
+										openDropdown.classList.remove('show');
+									}
+								}
+							}
+						}
+					</script>
+				</div>
+				
+				
+				
+				<input id="searchbar" type="text" name="search" placeholder="Search...">
+			
+				<div class="icon">
+					<a href="#"><img src="heart.png" class="icons"></a>
+					<a href="#"><img src="person.png" class="icons"></a>
+					<a href="#"><img src="cart.png" class="icons"></a>
+				</div>
+				
+			</div>
+			
+			<!-- closses div#top-head -->	
+		</div>
+	<!-- closes the div#header -->
+	</div>
+	
+	
+	<div id="content">
+		<!-- fixed side navigation bar with icons for different departments -->
+		<div id="side-nav">
+				<div>
+				<a href="#"><img class="icons" src="https://image.flaticon.com/icons/png/128/63/63297.png"></a>
+				<div class="dep-name"><a href="mens.html">Men's Clothing</a></div>
+				</div>
+				
+				<div>
+				<a href="womens.html"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/33448-200.png"></a>
+				<div class="dep-name"><a href="mens.html">Women's Clothing</a></div>
+				</div>
+				
+				<div>
+				<a href="#"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/42970-200.png"></a>
+				<div class="dep-name"><a href="mens.html">Phone</a></div>
+				</div>
+				
+				<div id="active">
+				<a href="#"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/3281-200.png"></a>
+				<div class="dep-name"><a href="mens.html">Computers</a></div>
+				</div>
+				
+				<div>
+				<a href="#"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/80455-200.png"></a>
+				<div class="dep-name"><a href="mens.html">Jewellery</a></div>
+				</div>
+				
+				<div>
+				<a href="#"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/28076-200.png"></a>
+				<div class="dep-name"><a href="mens.html">Home</a></div>
+				</div>
+				
+				<div>
+				<a href="#"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/13798-200.png"></a>
+				<div class="dep-name"><a href="mens.html">Accessories</a></div>
+				</div>
+				
+				<div>
+				<a href="#"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/607906-200.png"></a>
+				<div class="dep-name"><p>Baby</p></div>
+				</div>
+				
+				<div>
+				<a href="#"><img class="icons" src="http://www.free-icons-download.net/images/basketball-icon-86027.png"></a>
+				<div class="dep-name"><p>Sports</p></div>
+				</div>
+				
+				<div>
+				<a href="#"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/996-200.png"></a>
+				<div class="dep-name"><p>Auto</p></div>
+				</div>
+		</div>
+		<!-- end of code for the fixed side nav bar -->
+		
+		<!-- carousel -->
+		<div class="carousel">
+			<div class="slides">
+				<img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2015/10/surface-pro-31.gif" style="width:100%;height:500px;">
+				<div class="text">Sale Now On!</div>
+			</div>
+			
+			<div class="slides">
+				<img src="http://www.villaadriatica.com/wp-content/uploads/2013/06/Special-offer-600.jpg" style="width:100%;height:500px;">
+				<div class="text">Limited Time Special Offer!</div>
+			</div>
+			
+			<div class="slides">
+				<img src="http://www.oxfordmarquees.co.uk/wp-content/uploads/2015/12/Sale.png" style="width:100%;height:500px;">
+				<div class="text">Limited Time Special Offer!</div>
+			</div>
+			
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+		
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+		<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow -->
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+			
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+			
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+			
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("slides");
+				var dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className.replace("active", "");
+				}
+				slides[slideIndex-1].style.display = "block";
+				dots[slideIndex-1].className += "active";
+			}
+		</script>
+		<!-- end of carousel -->
+		
+		
+		
+		
+		<div id="empty1">
+		</div>
+		
+		
+		
+		
+		
+		<!-- Shop by category section-->
+				<div class="shop-container">
+					<div class="shop-section">
+		
+						<div class="shop-by-categ">
+								<h3 class="shop-by">Shop By Category &#46; &#46; &#46; &#62;</h3>
+						</div>
+						
+						<div class="container next">
+							  <img src="software.jpg" alt="Avatar" class="image" width="200" height="200">
+							  <div class="overlay">
+								<div class="text"><strong>Microsoft Windows 10 Home<br><span>Only £25</strong><br><br>
+								
+								<p><a href="https://www.amazon.co.uk/Microsoft-Windows-10-Home-Download/dp/B01019T6O0/ref=sr_1_1?ie=UTF8&qid=1510670977&sr=8-1&keywords=windows+10/">Click Here To Find More !</a></p></div>
+							  </div>
+							</div>
+
+
+							<div
+							   style="
+								  left: 1280px;
+								  position: absolute;
+								  z-index: 1;
+								  visibility: show;">
+							<p id="PCat"><a id="catlink" href="http://www.google.co.uk">View All Mice... ></a></p>
+							</div>
+
+						
+						
+						 <div class="container next">
+								<img src="tower.jpg" alt="Avatar" class="image" width="200" height="200">
+								<div class="overlay">
+									<div class="text"><strong>Cyberpower Warrior:</strong>
+										<p><a href="https://www.amazon.co.uk/Cyberpower-Warrior-i7-1080-Gaming-PCI/dp/B0716BJH6W/ref=sr_1_1?ie=UTF8&qid=1510656700&sr=8-1&keywords=cyberpower+warrior">Click Here To  Find  More !</a></p>
+									</div>
+								</div>
+						</div>
+
+
+						<div
+								style="
+								left: 275px;
+								position: absolute;
+								z-index: 1;
+								visibility: show;">
+							<p id="PCat"><a id="catlink"  href="http://www.google.co.uk">View All Software... ></a></p>
+						</div>
+					
+						<div class="container next">
+								<img src="monitor.jpg" alt="Avatar" class="image" width="200" height="200">
+								<div class="overlay">
+									<div class="text"><strong>ASUS VS248HR 24 inch Gaming Monitor:</strong>
+										<p><a href="https://www.amazon.co.uk/gp/product/B014RKZ81O/ref=s9_acsd_ri_bw_c_x_1_w?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=merchandised-search-6&pf_rd_r=P6AQJQFENBGHHBM4FYZY&pf_rd_r=P6AQJQFENBGHHBM4FYZY&pf_rd_t=101&pf_rd_p=b3b74679-a4f1-4888-9c7b-c7cd270e5f8f&pf_rd_p=b3b74679-a4f1-4888-9c7b-c7cd270e5f8f&pf_rd_i=428652031">Click Here To  Find  More !</a></p></div>
+								</div>
+						</div>
+
+						<div
+							style="
+								left: 600px;
+								position: absolute;
+								z-index: 1;
+								visibility: show;">
+								<p id="PCat"><a id="catlink" href="http://www.google.co.uk">View All Towers... ></a></p>
+						</div>
+						
+						
+						<div class="container next">
+							<img src="mouse.jpg" alt="Avatar" class="image" width="200" height="200">
+							<div class="overlay">
+									<div class="text"><strong>Wireless Mouse, VicTsing Quiet Click 7 Buttons:</strong>
+											<p><a href="https://www.amazon.co.uk/Wireless-VicTsing-Cordless-Ergonomic-Adjustable-Black/dp/B00G40NVHO/ref=sr_1_6?s=computers&ie=UTF8&qid=1510658077&sr=1-6&keywords=gaming+mouse/">Click Here To  Find  More !</a></p></div></div>
+											</div>
+									</div>
+								<div
+								style="
+									  left: 950px;
+									  position: absolute;
+									  z-index: 1;
+									  visibility: show;">
+								<p id="PCat"a id="catlink" href="http://www.google.co.uk">View All Monitors... ></a></p>
+								</div>
+								<br><br><br>
+								
+							<div class="container next">
+								  <img src="glaptop.jpg" alt="Avatar" class="image" width="200" height="200">
+								  <div class="overlay">
+									<div class="text"><strong>MSI GV72 7RD-833UK:</strong>
+									<p><a href="https://www.amazon.co.uk/MSI-7RD-833UK-17-3-Inch-Gaming-Laptop/dp/B0735FQVP6/ref=sr_1_7?s=computers&ie=UTF8&qid=1510670207&sr=1-7&keywords=gaming+laptop/">Click Here To  Find  More !</a></p></div>
+								  </div>
+								</div>
+
+										<div
+										   style="
+											  left: 920px;
+											  position: absolute;
+											  z-index: 1;
+											  visibility: show;">
+										<p id="PCat" ><a id="catlink" style="margin-right:50px;" href="http://www.google.co.uk">View All Keyboards... ></a></p>
+										</div>	
+								
+								<div class="container next">
+										  <img src="laptops.jpg" alt="Avatar" class="image" width="200" height="200">
+										  <div class="overlay">
+											<div class="text"><strong>ASUS X550CC</strong>
+											<p><a href="https://www.amazon.co.uk/ASUS-X550CC-15-6-inch-Notebook-Silver/dp/B00E37N4S6/ref=sr_1_4?s=computers&ie=UTF8&qid=1510665791&sr=1-4&keywords=laptop&refinements=p_n_feature_browse-bin%3A1481780031/">Click Here To  Find  More !</a></p>
+											</div>
+										  </div>
+										</div>
+
+									<div
+									   style="
+										  left: 280px;
+										  position: absolute;
+										  z-index: 1;
+										  visibility: show;">
+									<p id="PCat"><a id="catlink" href="http://www.google.co.uk">View All Gaming Laptops... ></a></p>
+									</div>
+							
+										
+									<div class="container next">
+										  <img src="keyboard.jpg" alt="Avatar" class="image" width="200" height="200">
+										  <div class="overlay">
+											<div class="text"><strong>TEC.BEAN Rainbow Backlit:</strong>
+											<p><a href="https://www.amazon.co.uk/TEC-BEAN-Rainbow-Backlit-Office-Keyboard/dp/B01NCES2LN/ref=sr_1_8?s=computers&ie=UTF8&qid=1510659715&sr=1-8&keywords=gaming+keyboard/">Click Here To  Find  More !</a></p></div>
+										  </div>
+										</div>
+
+										<div
+										   style="
+											  left: 1275px;
+											  position: absolute;
+											  z-index: 1;
+											  visibility: show;">
+										<p id="PCat"><a   id="catlink" href="http://www.google.co.uk">View All Surfaces... ></a></p>
+										</div>
+					
+					
+					
+					
+										<div class="container next">
+										  <img src="surface.jpg" alt="Avatar" class="image" width="200" height="200">
+										  <div class="overlay">
+											<div class="text"><strong>Microsoft Surface Pro:</strong>
+											<p><a href="https://www.amazon.co.uk/Microsoft-Surface-12-3-inch-PixelSense-Tablet/dp/B072LVK1CK/ref=sr_1_1?s=computers&ie=UTF8&qid=1510669300&sr=1-1&keywords=surface/">Click Here To  Find  More !</a></p></div>
+										  </div>
+										</div>
+
+
+										<div
+										   style="
+											  left: 600px;
+											  position: absolute;
+											  z-index: 1;
+											  visibility: show;">
+										<p id="PCat"><a id="catlink" href="http://www.google.co.uk">View All Laptops... ></a></p>
+										</div>
+					
+					</div>
+			
+				</div>
+				
+		
+		
+		
+		
+		
+		
+		
+		
+		<!-- shop by brand section -->
+		<div class="shop-container">
+			<div id="brand">
+		
+				<div class="shop-by-categ">
+					<h3 class="shop-by">Shop By Brand &#46; &#46; &#46; &#62;</h3>
+				</div>
+			
+				<div class="item">
+					<a href="#">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/HP_logo_630x630.png" width="200" height="180">
+					</a>
+				</div>
+				
+				<div class="item">
+					<a href="#">
+						<img src="http://www.myiconfinder.com/uploads/iconsets/256-256-0057616d64af28f3ef25b9095efda57f-Asus.png" width="200" height="180">
+					</a>
+				</div>
+				
+				<div class="item">
+					<a href="#">
+						<img src="https://image.flaticon.com/icons/png/512/37/37150.png" width="200" height="180">
+					</a>
+				</div>
+			
+				<div class="item">
+					<a href="#">
+						<img src="http://logo-logos.com/wp-content/uploads/2016/11/Acer_logo_logotype.png" width="200" height="180">
+					</a>
+				</div>
+			
+				<div class="item">
+					<a href="#">
+						<img src="http://logok.org/wp-content/uploads/2015/03/Compaq-logo-219x286.png" width="200" height="180">
+					</a>
+				</div>
+			
+				<div class="item">
+					<a href="#">
+						<img src="http://www.pinoygaming.net/wp-content/uploads/2017/02/OMEN-logo_red-300x300.png" width="200" height="180">
+					</a>
+				</div>
+			
+				<div class="item">
+					<a href="#">
+						<img src="http://pluspng.com/img-png/dell-logo-png-dell-2016-logo-vector-200.png" width="200" height="180">
+					</a>
+				</div>
+			
+				<div class="item">
+					<a href="#">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/TOSHIBA_Logo.png/320px-TOSHIBA_Logo.png" width="200" height="180">
+					</a>
+				</div>
+			</div>
+		
+			</div>
+		<!-- end of shop by brand section -->
+		
+		
+		
+			
+		
+		
+		
+		<!-- mens sale items -->
+		<div class="shop-container">
+				<div id="mensale">
+			
+									<div class="shop-by-categ">
+											<h3 class="shop-by">Sale Items &#46; &#46; &#46; &#62;</h3>
+									</div>
+				
+												
+											
+											
+										<div class="container2 next2">
+											  <img src="lapsale.png" alt="Avatar" class="image2" width="200" height="200">
+											  <div class="overlay2">
+												<div class="text2"><strong>A Large Selection Of Laptops <br>on Sale Now!</strong><br><br>
+												<p><a href="/">Click Here To  Find  More !</a></p></div></div>
+										</div>
+											  
+
+
+
+
+											<div class="container2 next2">
+											  <img src="lapsale2.png" alt="Avatar" class="image2" width="200" height="200">
+											  <div class="overlay2">
+												<div class="text2"><strong>A Large Selection Of Gaming Laptops <br>on Sale Now!</strong><br><br>
+
+											<p><a href="">Click Here To  Find  More !</a></p></div>
+											  </div>
+											</div>
+
+
+											<div class="container2 next2">
+											  <img src="towersale.png" alt="Avatar" class="image2" width="200" height="200">
+											  <div class="overlay2">
+												<div class="text2"><strong>A Large Selection Of Tower PCs <br>on Sale Now!</strong><br><br>
+
+												<p><a href="/">Click Here To  Find  More !</a></p></div></div>
+											  </div>
+
+									
+									
+									
+									
+									</div>
+								</div>
+					
+		<!-- ebd of the sale items section -->
+		
+		
+		
+		
+		
+		<!--START OF RECOMMENDATIONS -->
+		
+		
+		<div class="shop-container">
+			
+			<div id="recom" style="margin-right:70px;margin-top: 40px;padding:50px;padding-bottom:70px;">
+			
+				<div class="shop-by-categ">
+					<h3 class="shop-by">Recommended &#46; &#46; &#46; &#62;</h3>
+				</div>
+			
+				
+				
+															<div class="container3 next3">
+											  <img src="recall.png" alt="Avatar" class="image3" width="200" height="200">
+											  <div class="overlay3">
+												<div class="text"><strong>Acer C22-760</strong><br><br>
+												-Software: Windows 10<br>
+												-Processor: Intel® CoreTM i3-6100U Processor <br>
+												-RAM: 8 GB <br>
+												-Storage: 1 TB HDD, With built-in WiFi<br>
+												-21.5 inch Full HD LED Screen with <br>Resolution: 1920 x 1080, Bluetooth 4.0<br>
+												-USB 3.0 x 2 - USB 2.0 x 2, 3.5 mm jack, <br>SD card reader, Integrated stereo speakers<br>
+												<p><a href="/">Click Here To  Find  More Great Deals!</a></p></div></div>
+											</div>
+
+
+
+
+
+											<div class="container3 next3">
+											  <img src="towerrec.png" alt="Avatar" class="image3" width="200" height="200">
+											  <div class="overlay3">
+												<div class="text3"><strong>DELL Inspiron 3268 </strong><br><br>
+												-Software: Windows 10<br>
+												-Processor: Intel® Core™ i5-7400 Processor<br>
+												-RAM: 8 GB <br>
+												-Storage: 1 TB HDD, With built-in WiFi<br>
+												-USB 3.0 x 2 - USB 2.0 x 2, 3.5 mm jack, <br>SD card reader, Integrated stereo speakers<br>
+											<p><a href="/">Click Here To  Find  More Great Deals!</a></p></div></div>
+											  </div>
+
+
+
+											<div class="container3 next3">
+											  <img src="macrec.png" alt="Avatar" class="image3" width="200" height="200">
+											  <div class="overlay3">
+												<div class="text3"><strong>Apple iMac 4k 21.5 Inch</strong><br><br>
+												-Software:  MAC OS<br>
+												-Processor: 3.0GHz quad-core 7th-generation <br>Intel Core i5 processor<br>
+												-RAM: 8GB 2400MHz memory, configurable <br>to 16GB <br>
+												-Storage: 1 TB HDD, With built-in WiFi<br>
+												-Graphics Card: Radeon Pro 555 with 2GB <br>video memory<br>
+												<p><a href="/">Click Here To  Find  More Great Deals!</a></p></div></div>
+											  </div>
+
+
+
+											<div class="container3 next3">
+											  <img src="allrec.png" alt="Avatar" class="image3" width="200" height="200">
+											  <div class="overlay3">
+												<div class="text3"><strong>HP Pavilion 24-b212na 23.8"<br> Touchscreen All-in-One PC</strong><br><br>
+
+												<p><a href="/">Click Here To  Find  More Great Deals!</a></p>
+												
+													-Software:  Windows 10<br>
+												-Processor:AMD A12-92730P APU <br>2 GHz/3.GHz <br>
+												-RAM: 8GB<br>
+												-Storage: 2 TB HDD, With built-in WiFi<br>
+												-Graphics Card: Integrated Graphics<br></div></div>
+												
+											  </div>
+				
+				
+				
+				
+				
+				
+			<!-- closes recom div -->
+			</div>
+		<!-- closes shop container -->
+		</div>
+		<!-- end of recommended section -->
+	<!-- closes the div#content -->
+	</div>
+		
+	<!--END OF RECOMMENDATIONS -->
+	
+	
+		
+	
+	
+	
+		<!-- footer -->
+	
+		<div class="footer">
+			<div class="wrap">
+
+				<div class ="search">
+					<p>Get offers in your inbox</p>
+				<div id="text">
+			</div>
+
+			<input type ="text" class="searchTerm" placeholder="What are you looking for?">
+			<button type ="submit" class="searchButton">
+				<img id="button" src="search.png">
+			</button>
+
+			<div id="inbox">
+				<img id="inboxnew" src="inboxtick.png">
+			</div>
+
+			<div id="socialmedia1">
+				<img id="facebook" src="fbicon.png">
+			</div>
+
+			<div id="socialmedia2">
+				<img id="twitter" src="twitterlogo.png">
+			</div>
+			
+		</div>
+	
+	<!-- this one closes the container div -->
+	</div>
+	</body>
+</html>
