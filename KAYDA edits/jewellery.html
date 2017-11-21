@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="Mainstylesheet.css">
+		
+		<!-- this stylesheet contains the category color for the jwellery section-->
+		<link rel="stylesheet" href="jewellery.css">
+	</head>
+	
+	<body>
+	<div id="wrapper">
+	
+	
+	<div id="header">
+		<!-- header with logo, search bar, and cart -->
+		<div id="top-head">
+			<!-- logo -->
+			<div class="logo">
+				<a href="Mainpage.html"><img id="generic" src="GENERIC.png"></a>
+			</div>
+			
+			<!-- search bar -->
+			<div class="search-bar">
+			
+				<div class="dropdwn">
+					<button onclick="drop()" id="categ" class="buttoncat">
+						Categories <i class="darrow"></i>
+					</button>
+					<div id="dropcat" class="drop-content">
+						<a href="mens.html">Men's Clothing</a>
+						<a href="#">Women's Clothing</a>
+						<a href="#">Phones</a>
+						<a href="#">Technology</a>
+						<a href="#">Jewellery</a>
+						<a href="#">Home and Furniture</a>
+						<a href="#">Accessories</a>
+						<a href="#">Baby</a>
+						<a href="#">Sports</a>
+						<a href="#">Automobile Accessories</a>
+					</div>
+					
+					<!-- script for when the user clicks on the category button
+						to show or hide the dropdown content in #dropcat-->
+					<script>
+						function drop() {
+							document.getElementById("dropcat").classList.toggle("show");
+						}
+						
+						window.onclick = function(event) {
+							if (!event.target.matches('.buttoncat')) {
+							
+								var dropdowns = document.getElementsByClassName("drop-content");
+								var i;
+								for (i = 0; i < dropdowns.length; i++) {
+									var openDropdown = dropdowns[i];
+									if (openDropdown.classList.contains('show')) {
+										openDropdown.classList.remove('show');
+									}
+								}
+							}
+						}
+					</script>
+				</div>
+				
+				
+				
+				<input id="searchbar" type="text" name="search" placeholder="Search...">
+			
+				<div class="icon">
+					<a href="#"><img src="heart.png" class="icons"></a>
+					<a href="#"><img src="person.png" class="icons"></a>
+					<a href="#"><img src="cart.png" class="icons"></a>
+				</div>
+				
+			</div>
+			
+			<!-- closses div#top-head -->	
+		</div>
+	<!-- closes the div#header -->
+	</div>
+	
+	
+	
+	
+	
+	
+	<div id="content">
+		<!-- fixed side navigation bar with icons for different departments -->
+		<div id="side-nav">
+				<div>
+				<a href="mens.html"><img class="icons" src="https://image.flaticon.com/icons/png/128/63/63297.png"></a>
+				<div class="dep-name"><a href="mens.html">Men's Clothing</a></div>
+				</div>
+				
+				<div>
+				<a href="#"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/33448-200.png"></a>
+				<div class="dep-name"><a href="mens.html">Women's Clothing</a></div>
+				</div>
+				
+				<div>
+				<a href="#"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/42970-200.png"></a>
+				<div class="dep-name"><a href="mens.html">Phone</a></div>
+				</div>
+				
+				<div>
+				<a href="#"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/3281-200.png"></a>
+				<div class="dep-name"><a href="mens.html">Computers</a></div>
+				</div>
+				
+				<div id="active">
+				<a href="#"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/80455-200.png"></a>
+				<div class="dep-name"><a href="mens.html">Jewellery</a></div>
+				</div>
+				
+				<div>
+				<a href="#"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/28076-200.png"></a>
+				<div class="dep-name"><a href="mens.html">Home</a></div>
+				</div>
+				
+				<div>
+				<a href="#"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/13798-200.png"></a>
+				<div class="dep-name"><a href="mens.html">Accessories</a></div>
+				</div>
+				
+				<div>
+				<a href="#"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/607906-200.png"></a>
+				<div class="dep-name"><p>Baby</p></div>
+				</div>
+				
+				<div>
+				<a href="#"><img class="icons" src="http://www.free-icons-download.net/images/basketball-icon-86027.png"></a>
+				<div class="dep-name"><p>Sports</p></div>
+				</div>
+				
+				<div>
+				<a href="#"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/996-200.png"></a>
+				<div class="dep-name"><p>Auto</p></div>
+				</div>
+		</div>
+		<!-- end of code for the fixed side nav bar -->
+		
+		
+		
+		
+		
+		<!-- carousel -->
+		<div class="carousel">
+			<div class="slides">
+				<img src="http://www.retailreviews.net/wp-content/uploads/2015/05/jollychic-website-banner-853.gif" style="width:100%;height:500px;">
+				<div class="text">Sale Now On!</div>
+			</div>
+			
+			<div class="slides">
+				<img src="http://www.villaadriatica.com/wp-content/uploads/2013/06/Special-offer-600.jpg" style="width:100%;height:500px;">
+				<div class="text">Limited Time Special Offer!</div>
+			</div>
+			
+			<div class="slides">
+				<img src="http://www.oxfordmarquees.co.uk/wp-content/uploads/2015/12/Sale.png" style="width:100%;height:500px;">
+				<div class="text">Limited Time Special Offer!</div>
+			</div>
+			
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+		
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+		<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow -->
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+			
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+			
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+			
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("slides");
+				var dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className.replace("active", "");
+				}
+				slides[slideIndex-1].style.display = "block";
+				dots[slideIndex-1].className += "active";
+			}
+		</script>
+		<!-- end of carousel -->
+		
+		
+		
+		
+		<div id="empty1">
+		</div>
+		
+		
+		
+		
+		<!-- Shop by category section-->
+		<div class="shop-container">
+		
+			<div class="shop-section">
+		
+				<div class="shop-by-categ">
+					<h3 class="shop-by">Shop By Brand &#46; &#46; &#46; &#62;</h3>
+				</div>
+		
+				<div class="item">
+					<a href="#">
+						<img src="C:\Users\Alisar\Documents\GitHub\Website\KAYDA edits\Jewellery pic\miore.png" width="260" height="100">
+					</a>
+				</div>
+				
+				<div class="item">
+					<a href="#">
+						<img src="C:\Users\Alisar\Documents\GitHub\Website\KAYDA edits\Jewellery pic\tuscanysilver.png" width="260" height="100">
+					</a>
+				</div>
+				
+				<div class="item">
+					<a href="#">
+						<img src="C:\Users\Alisar\Documents\GitHub\Website\KAYDA edits\Jewellery pic\naava.png" width="250" height="100">
+					</a>
+				</div>
+			
+				<div class="item">
+					<a href="#">
+						<img src="C:\Users\Alisar\Documents\GitHub\Website\KAYDA edits\Jewellery pic\byjoy.png" width="250" height="100">
+					</a>
+				</div>
+			
+				<div class="item">
+					<a href="#">
+						<img src="C:\Users\Alisar\Documents\GitHub\Website\KAYDA edits\Jewellery pic\theia.png" width="250" height="100">
+					</a>
+				</div>
+			
+				<div class="item">
+					<a href="#">
+						<img src="C:\Users\Alisar\Documents\GitHub\Website\KAYDA edits\Jewellery pic\ta.png" width="250" height="100">
+					</a>
+				</div>
+			
+				<div class="item">
+					<a href="#">
+						<img src="C:\Users\Alisar\Documents\GitHub\Website\KAYDA edits\Jewellery pic\ar.png" width="250" height="100">
+					</a>
+				</div>
+			
+				<div class="item">
+					<a href="#">
+						<img src="C:\Users\Alisar\Documents\GitHub\Website\KAYDA edits\Jewellery pic\fio.png" width="250" height="100"
+				</div>
+			<!--closes shop-section" -->
+			</div>
+		<!-- end of shop by category
+		closes shop-container-->	
+		</div>
+		
+		
+		
+		
+		<div id="empty">
+		</div>
+		
+		
+		
+		
+		<!-- shop by brand section -->
+		<div class="shop-container">
+			<div id="brand">
+		
+				<div class="shop-by-categ">
+					<h3 class="shop-by">Shop By Brand &#46; &#46; &#46; &#62;</h3>
+				</div>
+			
+				<div class="item">
+					<a href="#">
+						<img src="https://www.lipstiq.com/wp-content/uploads/2014/05/Levis-Jeans-Logo-Black.jpg" width="260" height="180">
+					</a>
+					<div class="desc"><a href="#">View All Underwear &#46; &#46; &#46; &#62;</a></div>
+				</div>
+				
+				<div class="item">
+					<a href="#">
+						<img src="https://cdn.worldvectorlogo.com/logos/calvin-klein.svg" width="260" height="180">
+					</a>
+				</div>
+				
+				<div class="item">
+					<a href="#">
+						<img src="https://fontmeme.com/images/Forever-21-Logo.gif" width="260" height="180">
+					</a>
+				</div>
+			
+				<div class="item">
+					<a href="#">
+						<img src="http://crossgatesshopping.co.uk/wp-content/uploads/2015/11/New-Look-Logo.png" width="260" height="180">
+					</a>
+				</div>
+			
+				<div class="item">
+					<a href="#">
+						<img src="http://is4.mzstatic.com/image/thumb/Purple128/v4/94/98/d4/9498d473-3614-0cb6-10fa-f2a4e5f153dc/source/1200x630bb.jpg" width="260" height="180">
+					</a>
+				</div>
+			
+				<div class="item">
+					<a href="#">
+						<img src="http://bvd.se/wp-content/uploads/2012/06/bvd_hm_1-820x538.jpg" width="260" height="180">
+					</a>
+				</div>
+			
+				<div class="item">
+					<a href="#">
+						<img src="https://telmasimplelovesblog.files.wordpress.com/2014/08/lipsy-logo.jpg" width="260" height="180">
+					</a>
+				</div>
+			
+				<div class="item">
+					<a href="#">
+						<img src="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0023/7204/brand.gif?itok=PezE1GuU" width="260" height="180">
+					</a>
+				</div>
+			<!-- end of shop by brand section		
+			closes brand section-->
+			</div>
+		<!-- closes the shop-container -->
+		</div>
+		
+		
+		
+		
+		
+		<div id="empty">
+		</div>
+		
+		
+		
+		
+		<!-- mens sale items -->
+		<div class="shop-container">
+		
+			<div id="mensale">
+			
+				<div class="shop-by-categ">
+					<h3 class="shop-by">Sale Items &#46; &#46; &#46; &#62;</h3>
+				</div>
+		
+				<div class="sitem">
+					<a href="#">
+						<img src="https://s-media-cache-ak0.pinimg.com/originals/cd/23/c0/cd23c0cb566ef8b04bd8f6e114b10308.jpg">
+					</a>
+				</div>
+		
+				<div class="sitem">
+					<a href="#">
+						<img src="https://www.ravenwoodgolf.com/images/rokquickcart/gift-card-25.jpg">
+					</a>
+				</div>
+			
+			</div>
+		<!-- closes the shop-container -->
+		</div>
+		<!-- ebd of the sale items section -->
+		
+		
+		
+		
+		
+		<div id="empty">
+		</div>
+		
+		
+		
+		
+		
+		<div class="shop-container">
+			
+			<div id="recom">
+			
+				<div class="shop-by-categ">
+					<h3 class="shop-by">Recommended &#46; &#46; &#46; &#62;</h3>
+				</div>
+			
+				<div class="rec">
+					<a href="#">
+						<img src="https://metrouk2.files.wordpress.com/2016/11/winter-jackets.jpg" width="860" height="380">
+					</a>
+				</div>
+			<!-- closes recom div -->
+			</div>
+		<!-- closes shop container -->
+		</div>
+		<!-- end of recommended section -->
+	<!-- closes the div#content -->
+	</div>
+	
+	
+	
+		
+		<div id="empty1">
+		</div>
+		
+		
+		
+		
+		<!-- footer -->
+	
+		<div class="footer">
+			<div class="wrap">
+				<div class ="search">
+					<p>Get offers in your inbox</p>
+				<div id="text">
+			</div>
+
+			<input type ="text" class="searchTerm" placeholder="What are you looking for?">
+			<button type ="submit" class="searchButton">
+				<img id="button" src="search.png">
+			</button>
+
+			<div id="inbox">
+				<img id="inboxnew" src="inboxtick.png">
+			</div>
+
+			<div id="socialmedia1">
+				<img id="facebook" src="fbicon.png">
+			</div>
+
+			<div id="socialmedia2">
+				<img id="twitter" src="twitterlogo.png">
+			</div>
+			
+		</div>
+
+	</body>
+</html>
