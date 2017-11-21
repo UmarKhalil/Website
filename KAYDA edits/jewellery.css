@@ -9,7 +9,22 @@ h3.shop-by {
 	padding-bottom: 5px;
 }
 
+div.item {
+	height:	100px;
+	width: 250px;
+	margin: 20px 25px;
+}
+
+div.shop-section {
+	margin-left: 5%;
+}
+
 div.item img {
 	height: 100px;
-	width: 260x;
+	width: 250px;
+}
+
+.sitem, .gender img{
+	width: 370;
+	height: 350;
 }

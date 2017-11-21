@@ -420,6 +420,7 @@ h3.shop-by {
 	padding-right: 140px;
 	border-bottom: 3px solid red;
 	padding-bottom: 5px;
+	text-decoration: none;
 }
 
 /* end of stying for shop-by headings */
