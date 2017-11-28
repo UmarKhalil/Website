@@ -444,7 +444,7 @@ div#brand, #mensale {
 	margin-top: 50px;
 }
 
-div.item, .sitem, .rec {
+div.item, .sitem, .rec, .gender {
     margin: 45px 40px;
 	background-color: white;
     float: left;

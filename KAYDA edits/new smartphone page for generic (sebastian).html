@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+    
+	margin: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    float: left;
+    width: 200px;
+	box-sizing: border-box;
+	display: block;
+	
+}
+
+div.gallery:hover {
+  width: 200px;
+  transition: width 1.5s;
+  animation: shake 0.8s;
+  animation-iteration-count: 100%;
+  background-color: #fafafa;
+  
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+	display: block;
+}
+
+div.desc {
+    padding: 1px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding-bottom: 40px;
+	padding-top: 10px;
+	width: 60px;
+}
+
+img:hover{
+	width: 70px;
+}
+
+div.android{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding-bottom: 40px;
+	padding-top: 10px;
+	width: 30px;
+}
+
+#android{
+    display: block;
+    margin: auto;
+	margin-top: auto;
+	width: 70px;
+	padding-top: 80px;
+	padding-bottom: 15px;
+}
+
+#android:hover{
+	width: 78px;
+}
+
+#windows{
+	display: block;
+    margin: auto;
+	margin-top: auto;
+	margin-left: auto;
+	width: 70px;
+	padding-top: 80px;
+	padding-bottom: px;
+	
+}
+
+#windows:hover{
+	width: 75px;
+}
+
+h1 {
+	font-family: arial;
+	font-size: 40px;
+	text-align: center;
+	padding: 20px;
+}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+div.logo {
+	display: inline;
+	float: left;
+	width: 200px;
+	height: 200px;
+}
+
+div.logo, img#generic {
+	height: 130px;
+	width: 150px;
+	padding-left: 30px;
+}
+
+div#side-nav {
+	position: fixed;
+	top: 250px;
+	width: 75px;
+	height: 40px;
+	left: 0;
+	background-color: white;
+	border: solid 2px #b3b3b3;
+}
+
+div#side-nav div {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
+	position: relative;
+}
+
+#side-nav div .dep-name {
+	opacity: 0;
+	position: absolute;
+	visibility: hidden;
+	display: inline-block;
+	left: 0;
+	top: 0;
+	margin-top: 0;
+	border: 2px solid #b3b3b3;
+	background-color: white;
+	z-index: 10;
+	height: 40px;
+	width: 90px;
+	transition: transform 0.2s;
+	transform: translateX(-50px);
+}
+
+#side-nav div .dep-name a {
+	font-size: 15px;
+	text-decoration: none;
+	color: black;
+}
+
+div#side-nav div:hover {
+	background-color: #b3b3b3;
+	cursor: pointer;
+}
+
+div#side-nav div:hover .dep-name {
+	opacity: 1;
+	left: 100%;
+	transform: translateX(0px);
+	visibility: visible;
+}
+
+#active {
+	border: 2px solid red;
+	background-color: #b3b3b3;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="logo">
+				<a href="Mainpage.html"><img id="generic" src="GENERIC.png"></a>
+			</div>
+			
+
+<h1>Smartphones </h1>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="http://cdn.pocket-lint.com/r/s/1200x/assets/images/120309-phones-buyer-s-guide-best-smartphones-image1-cnxvifjlms.jpg" style="width:80%">
+ 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="http://cdn.pocket-lint.com/r/s/1200x/assets/images/124434-phones-buyer-s-guide-best-android-phones-2017-these-are-the-androids-you-re-looking-for-image1-ifntyh3txd.jpg" style="width:80%">
+  
+</div>
+
+<div id="content">
+		<!-- fixed side navigation bar with icons for different departments -->
+		<div id="side-nav">
+				<div id="active">
+				<a href="#"><img class="icons" src="https://image.flaticon.com/icons/png/128/63/63297.png"></a>
+				<div class="dep-name"><a href="mens.html">Men's Clothing</a></div>
+				</div>
+				
+				<div>
+				<a href="womens.html"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/33448-200.png"></a>
+				<div class="dep-name"><a href="mens.html">Women's Clothing</a></div>
+				</div>
+				
+				<div>
+				<a href="#"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/42970-200.png"></a>
+				<div class="dep-name"><a href="mens.html">Phone</a></div>
+				</div>
+				
+				<div>
+				<a href="#"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/3281-200.png"></a>
+				<div class="dep-name"><a href="mens.html">Computers</a></div>
+				</div>
+				
+				<div>
+				<a href="#"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/80455-200.png"></a>
+				<div class="dep-name"><a href="mens.html">Jewellery</a></div>
+				</div>
+				
+				<div>
+				<a href="#"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/28076-200.png"></a>
+				<div class="dep-name"><a href="mens.html">Home</a></div>
+				</div>
+				
+				<div>
+				<a href="#"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/13798-200.png"></a>
+				<div class="dep-name"><a href="mens.html">Accessories</a></div>
+				</div>
+				
+				<div>
+				<a href="#"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/607906-200.png"></a>
+				<div class="dep-name"><p>Baby</p></div>
+				</div>
+				
+				<div>
+				<a href="#"><img class="icons" src="http://www.free-icons-download.net/images/basketball-icon-86027.png"></a>
+				<div class="dep-name"><p>Sports</p></div>
+				</div>
+				
+				<div>
+				<a href="#"><img class="icons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/996-200.png"></a>
+				<div class="dep-name"><p>Auto</p></div>
+				</div>
+		</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<img src="https://image.flaticon.com/icons/png/512/37/37150.png">
+
+
+<div class="gallery">
+    <img src="https://staticshop.o2.co.uk/product/images/iphone-x-space-grey-sku-header.png?cb=4097182fcd8a0d7b7e51b89d4a48f5bc" width="300" height="200">
+  </a>
+  <div class="desc">IPhone X</div>
+</div>
+
+<div class="gallery">
+ <img src="https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/H/HQ/HHQN2/HHQN2_AV1?wid=1000&hei=1000&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1484167786180" width="600" height="400">
+  </a>
+  <div class="desc">IPhone 6s Plus</div>
+</div>
+
+<div class="gallery">
+    <img src="https://www.bell.ca/Styles/wireless/all_languages/all_regions/catalog_images/large/mobile/front/iPhone6s-Plus_spacegrey_en.png" width="600" height="400">
+  </a>
+  <div class="desc">IPhone 7</div>
+</div>
+
+<div class="gallery">
+    <img src="http://www.anywhereyougo.com/wp-content/uploads/iphone-4-black-430x430-front.png" width="600" height="400">
+  </a>
+  <div class="desc">IPhone 4s</div>
+</div>
+
+<div class="gallery">
+    <img src="https://staticshop.o2.co.uk/product/images/iphone-x-space-grey-sku-header.png?cb=4097182fcd8a0d7b7e51b89d4a48f5bc" width="300" height="200">
+  </a>
+  <div class="desc">IPhone X</div>
+</div>
+
+<div class="gallery">
+ <img src="https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/H/HQ/HHQN2/HHQN2_AV1?wid=1000&hei=1000&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1484167786180" width="600" height="400">
+  </a>
+  <div class="desc">IPhone 6s Plus</div>
+</div>
+
+<div class="gallery">
+    <img src="https://www.bell.ca/Styles/wireless/all_languages/all_regions/catalog_images/large/mobile/front/iPhone6s-Plus_spacegrey_en.png" width="600" height="400">
+  </a>
+  <div class="desc">IPhone 7</div>
+</div>
+
+<div class="gallery">
+    <img src="http://www.anywhereyougo.com/wp-content/uploads/iphone-4-black-430x430-front.png" width="600" height="400">
+  </a>
+  <div class="desc">IPhone 4s</div>
+</div>
+
+<div class="gallery">
+    <img src="https://staticshop.o2.co.uk/product/images/iphone-x-space-grey-sku-header.png?cb=4097182fcd8a0d7b7e51b89d4a48f5bc" width="300" height="200">
+  </a>
+  <div class="desc">IPhone X</div>
+</div>
+
+<div class="gallery">
+ <img src="https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/H/HQ/HHQN2/HHQN2_AV1?wid=1000&hei=1000&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1484167786180" width="600" height="400">
+  </a>
+  <div class="desc">IPhone 6s Plus</div>
+</div>
+
+
+
+
+
+<img src="https://image.freepik.com/free-icon/android-logo_318-54234.jpg"  id="android"/>
+
+
+<div class="gallery">
+    <img src="http://images.samsung.com/is/image/samsung/p5/uk/_mobile/smartphones/pcd/thumbnail-S8.png?$ORIGIN_PNG$" width="300" height="200">
+  </a>
+  <div class="desc">Samsung Galaxy S8</div>
+</div>
+
+<div class="gallery">
+    <img src="http://www.tmt.my/onlinestore/image/cache/Samsung/Galaxy/Note%208%20(2017)/samsung-note-8-black-1000x1000.png" width="300" height="200">
+  </a>
+  <div class="desc">Samsung Galaxy Note 8</div>
+</div>
+
+<div class="gallery">
+    <img src="https://www.bell.ca/Styles/wireless/all_languages/all_regions/catalog_images/Samsung-Galaxy-S7/Hero_lrg_Front_Black.png" width="300" height="200">
+  </a>
+  <div class="desc">Samsung Galaxy S7</div>
+</div>
+
+<div class="gallery">
+    <img src="http://images.samsung.com/is/image/samsung/p5/uk/_mobile/smartphones/pcd/thumbnail-S8.png?$ORIGIN_PNG$" width="300" height="200">
+  </a>
+  <div class="desc">Samsung Galaxy S8</div>
+</div>
+
+<div class="gallery">
+    <img src="http://www.tmt.my/onlinestore/image/cache/Samsung/Galaxy/Note%208%20(2017)/samsung-note-8-black-1000x1000.png" width="300" height="200">
+  </a>
+  <div class="desc">Samsung Galaxy Note 8</div>
+</div>
+
+
+
+<img src="https://image.flaticon.com/icons/svg/23/23700.svg"  id="windows"/>
+
+
+
+
+
+
+</body>
+</html>
