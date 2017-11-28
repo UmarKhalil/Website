@@ -39,6 +39,8 @@ div.item img {
 div.gender img {
 	height: 250px;
 	width: 250px;
+	display: block;
+	margin: auto;
 }
 
 div.gender img, div.items img {
@@ -56,6 +58,8 @@ div.gender img, div.items img {
 div.items img {
 	height: 180px;
 	width: 200px;
+	display: block;
+	margin: auto;
 }
 
 div.gender:hover img, div.items:hover img {
