@@ -394,82 +394,64 @@ div.desc:hover {
 /* START OF CATERGORIES */
 
 
-.container {
+.container1 {
+	display: inline-block;
   position: relative;
-  width: 50%;
-
+  width: 300px;
+  margin-left: 200px;
+  margin-top:30px;
+  margin-right:80px;
+  padding: 0px;
 }
-
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-
 
 .image {
   display: inline;
   width: 300px;
-  height: 250px;
-  margin-left: 180px;
-  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.19);
+  height: auto;
+  max-width: 100%;
+  
+
 }
 
-.overlay {
+.overlay1 {
+	display:inline-block;
   position: absolute;
   bottom: 0;
-  left: 100%;
+   left: 100%;
   right: 0;
-  background-color: #0099ff;
+  background-color: #008CBA;
   overflow: hidden;
   width: 0;
   height: 100%;
   transition: .5s ease;
-  margin-left: 150px;
-  opacity: 0.9;
 }
 
-.container:hover .overlay {
-  width: 100%;
-  left: 0;
-
-  
+.container1:hover .overlay1 {
+  width: 300px;
+  left: 0px;
   
 }
 
+.next1{
+	
+		display:inline-block;
+		 margin-right:20px;
+		
+}
 .text {
-  white-space: nowrap; 
-  color: black;
-  font-size: 14px;
+    white-space: nowrap; 
+  color: white;
+  font-size: 20px;
   position: absolute;
   overflow: hidden;
   top: 50%;
-  left:55%;
+  left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
 
-.next {
-	display: inline-block;
-	position:relative;
-	width: 20%;
-}
 
-#PCat {
 
-	color: black;
-	
-	font-family: Arial;
-
-}
-
-#catlink {
-
-	text-decoration:none;
-	color: black;
-	margin-left:100px;
-}
 
 
 
