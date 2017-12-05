@@ -491,7 +491,7 @@ div.desc:hover a {
 }
 
 #empty1 {
-	height: 90px;
+	height: 150px;
 }
 
 
@@ -504,7 +504,7 @@ div.desc:hover a {
 	bottom:0;
 	left: 0;
 	width: 100%;
-	height: 120px; /* height of the footer */
+	height: 180px; /* height of the footer */
 	background: grey;
 	
 }
@@ -549,35 +549,26 @@ width: 40px;
 height: 36px;
 border: 1px solid  #00BFCC;
 background: none;
-text-align: center;
 color: #fff;
 border-radius: 5px;
 cursor: pointer;	
-font-size: 20px;
 margin-bottom:50px;
 margin-left:100px;
-
 }
 
 #button {
-	height: 30px;
-	width: 30px;
+	height: 40px;
+	width: 40px;
 }
-
-
-
-
-
-
 
 #inbox {
 margin-bottom: -100px;
-margin-right: -100px;
+margin-right: 100px;
 margin-top: -65px;	
-margin-left: -390px;
+margin-left: -630px;
 width: 50px;
 height: -100px;
-
+float: left;
 }	
 
 #inboxnew {
