@@ -1,0 +1,31 @@
+/*colour theme*/
+
+h3.shop-by {
+	color: #666666;
+	border-bottom: 2px solid #666666;
+}
+
+
+.shop-section .productpics {
+	float: left;
+	margin-left: 5%;
+}
+
+#mainpic {
+	width: 33%;
+}
+
+#mainpic img{
+	width: 100%;
+}
+
+.smallpic {
+	float: left;
+	width: 10%;
+	padding: 10px;
+	margin-right: 2%;
+}
+
+.smallpic img {
+	width: 100%;
+}
