@@ -9,23 +9,37 @@ h3.shop-by {
 .shop-section .productpics {
 	float: left;
 	margin-left: 5%;
+	width: 50%;
 }
 
+
+/*size of the piccy*/
 #mainpic {
-	width: 33%;
+	width: 55%;
+	height: 400px;
 }
 
 #mainpic img{
 	width: 100%;
+	height: 100%;
 }
 
 .smallpic {
 	float: left;
-	width: 10%;
+	width: 15%;
 	padding: 10px;
-	margin-right: 2%;
+	margin-left: 2%;
 }
 
 .smallpic img {
 	width: 100%;
+}
+
+
+
+
+/* coding for the desription */
+.desc {
+	float: left;
+	overflow: hidden;
 }
