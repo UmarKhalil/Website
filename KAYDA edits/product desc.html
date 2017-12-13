@@ -162,7 +162,7 @@ https://www.w3schools.com/howto/howto_css_overlay.asp
 			</div>
 		
 			<div class="shop-section">
-					
+					<!-- pictures -->
 					<div class="productpics">
 						<div id="mainpic">
 							<img src="C:\Users\Alisar\Documents\GitHub\Website\KAYDA edits\Jewellery pic\lor.png">
@@ -180,8 +180,13 @@ https://www.w3schools.com/howto/howto_css_overlay.asp
 							<img src="C:\Users\Alisar\Documents\GitHub\Website\KAYDA edits\Jewellery pic\yet.jpg">
 						</div>
 					
+						<script>
+							
+						</script>
+					
+					
 					</div>
-			
+					<!-- description -->
 					<div class="desc">
 						<p id="JessieJ">&pound; 1,000,000</p>
 						<br>
@@ -212,6 +217,8 @@ https://www.w3schools.com/howto/howto_css_overlay.asp
 						<br><br>
 						&bull; Attracts unwanted attention</p>
 						
+						<!-- dropdown for the quantity of items and the 
+							add to basket buttonn-->
 						<div class="qtydrp">
 							<form>
 								<label for="qtynum">Quantity: </label>
@@ -230,8 +237,59 @@ https://www.w3schools.com/howto/howto_css_overlay.asp
 							</form>
 						</div>
 						
-						<button class="add" type="button">Add to Basket</button>
+						<button class="add" id="bot" type="button">Add to Basket</button>
+						
+						<!-- the modal -->
+						<div id="modale" class="modal">
+							<!-- mnodal content -->
+							<div class="modal-cont">
+								<div class="modal-head">
+									<span class="close">&times;</span>
+									<h3>Hooray!</h3>
+								</div>
+							
+								<div class="modal-bod">
+									<p>You item&#40;s&#41; have been added to your basket!</p>
+								</div>
+							
+								<div class="modal-foot">
+									<h5>Click out to continue shopping :D</h5>
+								</div>
+							</div>
+						</div>
+						
+						<!-- script to make modal appear -->
+						<script>
+							//get modal
+							var modal = document.getElementById("modale");
+							
+							//get button that opens the modal
+							var btn = document.getElementById("bot");
+							
+							//get <span> element that closes modal
+							var span = document.getElementsByClassName("close")[0];
+							
+							//open modal when user clicks the button
+							btn.onclick = function() {
+								modal.style.display = "block";
+							}
+							
+							//close modal when user clicks on <span> (x)
+							span.onclick = function() {
+								modal.style.display = "none";
+							}
+							
+							//close modal when user clicks outside of it
+							window.onclick = function(event) {
+								if (event.target == modal) {
+									modal.style.display = "none";
+								}
+							}
+						</script>
+						
 					</div>
+					
+					
 			<!--closes shop-section" -->
 			</div>
 		<!-- end of shop by category
