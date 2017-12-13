@@ -1,6 +1,8 @@
 /*colour theme*/
 
 h3.shop-by {
+	width: 40%;
+	padding-bottom: 10px;
 	color: #666666;
 	border-bottom: 2px solid #666666;
 }
@@ -9,9 +11,12 @@ h3.shop-by {
 .shop-section .productpics {
 	float: left;
 	margin-left: 5%;
-	width: 50%;
+	width: 45%;
 }
 
+.desc {
+	margin-left: 0;
+}
 
 /*size of the piccy*/
 #mainpic {
@@ -42,4 +47,109 @@ h3.shop-by {
 .desc {
 	float: left;
 	overflow: hidden;
+	width: 40%;
+}
+
+.desc p {
+	text-align: left;
+	font-weight: 10;
+	cursor: default;
+}
+
+#JessieJ {
+	font-size: 150%;
+	font-weight: bold;
+}
+
+/* code for the star review */
+.star-review {
+	width: 60%;
+	margin-left: 10%;
+}
+
+.hed {
+	font-size: 25px;
+	margin-right: 25px;
+}
+
+.fa {
+	font-size: 25px;
+}
+
+.checked {
+	color: orange;
+}
+
+/*three columns*/
+.side {
+	float: left;
+	width: 15%;
+	margin-top: 15px;
+}
+
+.middle {
+	margin-top: 10px;
+	float: left;
+	width: 70%;
+}
+
+/* text on right */
+.right {
+	text-align: right;
+}
+
+/* clear floats after columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* the bar container */
+.bar-container {
+	width: 100%;
+	background-color: #f1f1f1;
+	text-align: center;
+	color: white;
+}
+
+/* individual bars */
+.bar-5 {
+	width: 10%;
+	height: 18px;
+	background-color: blue;
+}
+
+.bar-4 {
+	width: 0;
+	height: 18px;
+	background-color: blue;
+}
+
+.bar-3 {
+	width: 10%;
+	height: 18px;
+	background-color: blue;
+}
+
+.bar-2 {
+	width: 0;
+	height: 18px;
+	background-color: blue;
+}
+
+.bar-1 {
+	width: 80%;
+	height: 18px;
+	background-color: blue;
+}
+
+/* rsponsiveness */
+@media (max-width: 800px) {
+	.side, .middle {
+		width: 100%
+	}
+	.right {
+		display: none;
+	}
 }
