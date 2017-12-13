@@ -7,6 +7,9 @@ h3.shop-by {
 	border-bottom: 2px solid #666666;
 }
 
+#empty {
+	height: 50px;
+}
 
 .shop-section .productpics {
 	float: left;
@@ -40,6 +43,44 @@ h3.shop-by {
 	width: 100%;
 }
 
+
+
+/*code for the quantity and add to basket button */
+.qtydrp {
+	float: left;
+	margin-top: 5%;
+	margin-left: 0;
+}
+
+#qty  {
+	width: 100px;
+	padding: 10px 15px;
+	border-radius: 4px;
+	border: 1px solid gray;
+}
+
+#qty option {
+	text-align: center;
+	padding: 5px;
+}
+
+.add {
+	display: inline-block;
+	margin-top: 5%;
+	margin-left: 0;
+	height: 40px;
+	width: 200px;
+	padding-bottom: 5px;
+	border-radius: 4px;
+	font-size: 17px;
+	font-family: arial black;
+}
+
+.add:hover {
+	cursor: pointer;
+	background-color: #ff3333;
+	color: white;
+}
 
 
 
@@ -152,4 +193,9 @@ h3.shop-by {
 	.right {
 		display: none;
 	}
+}
+
+/* code for the user reviews */
+.userviews {
+	margin-top: 100px;
 }
