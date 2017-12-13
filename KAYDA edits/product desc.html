@@ -165,23 +165,54 @@ https://www.w3schools.com/howto/howto_css_overlay.asp
 					<!-- pictures -->
 					<div class="productpics">
 						<div id="mainpic">
-							<img src="C:\Users\Alisar\Documents\GitHub\Website\KAYDA edits\Jewellery pic\lor.png">
+							<img id="bigpic" src="C:\Users\Alisar\Documents\GitHub\Website\KAYDA edits\Jewellery pic\lotr.jpg">
+						</div>
+						
+						<!-- modal pic -->
+						<div id="picmodal" class="imgmodal">
+							<span class="close">&times;</span>
+							<img class="modal-pic" id="img01">
+						</div>
+						
+						<script>
+							var modal = document.getElementById("picmodal");
+							
+							var img = document.getElementById("bigpic");
+							var modalPic = document.getElementById("img01");
+							
+							img.onclick = function() {
+								modal.style.display = "block";
+								modalPic.src = this.src;
+							}
+							
+							var span = document.getElementByClassName("close")[0];
+							
+							span.onclick = function() {
+								modal.style.display = "none";
+							}
+						</script>
+						
+						<!-- smaller preview pics -->
+						<div class="smallpic">
+							<img onclick="picdisp(this);" src="C:\Users\Alisar\Documents\GitHub\Website\KAYDA edits\Jewellery pic\lotr.jpg">
 						</div>
 				
 						<div class="smallpic">
-							<img src="C:\Users\Alisar\Documents\GitHub\Website\KAYDA edits\Jewellery pic\lotr.jpg">
+							<img onclick="picdisp(this);" src="C:\Users\Alisar\Documents\GitHub\Website\KAYDA edits\Jewellery pic\j.jpg">
 						</div>
 				
 						<div class="smallpic">
-							<img src="C:\Users\Alisar\Documents\GitHub\Website\KAYDA edits\Jewellery pic\j.jpg">
-						</div>
-				
-						<div class="smallpic">
-							<img src="C:\Users\Alisar\Documents\GitHub\Website\KAYDA edits\Jewellery pic\yet.jpg">
+							<img onclick="picdisp(this);" src="C:\Users\Alisar\Documents\GitHub\Website\KAYDA edits\Jewellery pic\lor.png">
 						</div>
 					
 						<script>
-							
+							function picdisp(imgs) {
+								var picBig = document.getElementById("bigpic");
+								
+								picBig.src = imgs.src;
+								
+								picBig.parentElement.style.display = "block";
+							}
 						</script>
 					
 					
